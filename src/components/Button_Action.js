@@ -1,13 +1,20 @@
 import  React, { createElement } from 'react';
+import para from "./para";
+
 
 function Button_Action(){
+    function clickHandler(){
+        return(
+            <div>
+                <para />
+            </div>
+        )
+    }
     return(
-        //<button id="click">ClickMe</button>
-        React.createElement('button',
-        {id="click"},
-        React.createElement('p',
-        {id='para'},
-        "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"))
+        <div>
+            <button onClick={clickHandler} id="click">Click</button>
+            
+        </div>
     )
 }
 
