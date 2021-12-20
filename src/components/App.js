@@ -6,13 +6,18 @@ function App() {
   
   const [state, setState] = useState(false)
   
+//   function clickHandler(){
+//     () => setState(!true)
+//   }
+  
   return (
     <div id="main">
       // Do not alter the main div
     
-      <p id="para"> Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy </p>
+      if(state) && <p id="para"> Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy </p>
     
-      <Button_Action />
+      <button onClick=[() => setState(!true)] id="click">Click</button>
+//       <Button_Action />
     </div>
   );
 }
