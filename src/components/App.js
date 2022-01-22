@@ -4,7 +4,7 @@ import Button_Action from "./Button_Action";
 
 function App() {
   
-  const [state, setState] = useState(false)
+  // const [state, setState] = useState(false)
   
 //   function clickHandler(){
 //     () => setState(!true)
@@ -13,7 +13,6 @@ function App() {
   return (
     <div id="main">
       // Do not alter the main div
-      <button onClick={clickHandler} id="click">Click</button>
       <Button_Action />
     </div>
   );
