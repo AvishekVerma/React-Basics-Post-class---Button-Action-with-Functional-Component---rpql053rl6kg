@@ -19,11 +19,11 @@ function Button_Action(){
     return(
         <div>
         
-            //if(state) && <p id="para"> Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy </p>
+            {/* //if(state) && <p id="para"> Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy </p>
              //<button onClick=[() => setState(!true)] id="click">Click</button>
             <button onClick={clickHandler} id="click">Click</button>
             if(state) && <para />
-            
+             */}
         </div>
     )
 }
