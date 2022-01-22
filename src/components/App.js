@@ -13,12 +13,8 @@ function App() {
   return (
     <div id="main">
       // Do not alter the main div
-    
-      if(state) && <p id="para"> Hello, I've learnt to use the full-stack evaluation tool. 
-                    This makes me so happy </p>
-    
-      <button onClick={() => setState(!true)} id="click">Click</button>
-      {/* <Button_Action /> */}
+      <button onClick={clickHandler} id="click">Click</button>
+      <Button_Action />
     </div>
   );
 }
