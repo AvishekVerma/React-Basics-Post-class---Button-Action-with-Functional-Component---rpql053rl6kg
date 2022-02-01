@@ -1,31 +1,17 @@
 import React, {Component, useState} from "react";
 import "./../styles/App.css";
-import Button_Action from "./Button_Action";
-import para from "./para";
 
-
-function App() {
-  
-  const [state, setState] = useState(false)
-  
-  function clickHandler() {
-    () => setState(true)
-  }
-  
+function App() {  
+  let [flag,setFlag]=useState(false);
   return (
     <div id="main">
       // Do not alter the main div
-      <button onClick={clickHandler} id="click">Click</button>
-      (state === true) ?
-       <p id="para">Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>
-       : null;
-       {/* <p id="para"></p>      */}
-      {/* <Button_Action /> */}
+    
+      <button id="click" onClick={() => setFlag(true)}>clickToRender</button>
+      {flag && <p id='para'>Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy</p>}
     </div>
   );
 }
 
 
 export default App;
-
-
